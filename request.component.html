@@ -1,0 +1,39 @@
+<h1 align="center">Paid Time Off Request </h1>
+<p align="center">Please fill out form completely and then submit</p>
+<form align="center">
+
+  <mat-form-field>
+    <mat-label>First Name</mat-label>
+    <input matInput [(ngModel)]="model" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Last Name</mat-label>
+    <input matInput [(ngModel)]="model" />
+  </mat-form-field>
+
+ <mat-form-field>
+  <mat-label>Start Date</mat-label>
+  <input matInput [matDatepicker]="start" [formControl]="startDate" />
+  <mat-datepicker-toggle matSuffix [for]="start"></mat-datepicker-toggle>
+  <mat-datepicker #start disabled="false"></mat-datepicker>
+ </mat-form-field>
+
+ <mat-form-field>
+  <mat-label>End Date</mat-label>
+  <input matInput [matDatepicker]="end" [formControl]="endDate" />
+  <mat-datepicker-toggle matSuffix [for]="end"></mat-datepicker-toggle>
+  <mat-datepicker #end disabled="false"></mat-datepicker>
+ </mat-form-field>
+<br>
+  <textarea cols="50" rows="4">Enter Comments</textarea>
+
+  <div class="header">
+    <a mat-raised-button href="/home">Submit Request</a>
+    <hr />
+  </div>
+
+  <button type="submit"> Submit</button>
+</form>
+
+
