@@ -3,15 +3,30 @@
 <form align="center">
 
   <mat-form-field>
-    <mat-label>First Name</mat-label>
+    <mat-label #start diabled="false">First Name</mat-label>
     <input matInput [(ngModel)]="model" />
   </mat-form-field>
 
   <mat-form-field>
-    <mat-label>Last Name</mat-label>
+    <mat-label #start disabled="false">Last Name</mat-label>
     <input matInput [(ngModel)]="model" />
   </mat-form-field>
 
+<br>
+  <br>
+  <mat-form-field>
+          <mat-label #start disabled="false">Manager Name</mat-label>
+      <input matInput [(ngModel)]="model" />
+      </mat-form-field>
+  <br>
+
+ <br>
+<mat-form-field>
+  <mat-label #start disabled="false">Pilot Email</mat-label>
+  <input matInput [(ngModel)]="model" />
+</mat-form-field>
+ <br>
+<br>
  <mat-form-field>
   <mat-label>Start Date</mat-label>
   <input matInput [matDatepicker]="start" [formControl]="startDate" />
@@ -26,14 +41,13 @@
   <mat-datepicker #end disabled="false"></mat-datepicker>
  </mat-form-field>
 <br>
+
+<br>
   <textarea cols="50" rows="4">Enter Comments</textarea>
-
-  <div class="header">
-    <a mat-raised-button href="/home">Submit Request</a>
-    <hr />
-  </div>
-
-  <button type="submit"> Submit</button>
+<br>
+<br>
+  <button>Submit</button>
+  <hr>
 </form>
 
 
