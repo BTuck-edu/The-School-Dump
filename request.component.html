@@ -1,53 +1,47 @@
-<h1 align="center">Paid Time Off Request </h1>
-<p align="center">Please fill out form completely and then submit</p>
+<h1 align="center">
+Please fill out form completely
+</h1>
+
 <form align="center">
+<label for="fname">First Name</label>
+<input type="text" id="fname" name="fname">
 
-  <mat-form-field>
-    <mat-label #start diabled="false">First Name</mat-label>
-    <input matInput [(ngModel)]="model" />
-  </mat-form-field>
+<label for="lname">Last Name</label>
+<input type="text" id="lname" name="lname">
+<br><br>
 
-  <mat-form-field>
-    <mat-label #start disabled="false">Last Name</mat-label>
-    <input matInput [(ngModel)]="model" />
-  </mat-form-field>
+<label>Pilot Email</label>
+<input type="text">
+<br><br>
 
-<br>
-  <br>
-  <mat-form-field>
-          <mat-label #start disabled="false">Manager Name</mat-label>
-      <input matInput [(ngModel)]="model" />
-      </mat-form-field>
-  <br>
+<label>Manager</label>
+<input type="text">
+<br><br>
 
- <br>
 <mat-form-field>
-  <mat-label #start disabled="false">Pilot Email</mat-label>
-  <input matInput [(ngModel)]="model" />
-</mat-form-field>
- <br>
-<br>
- <mat-form-field>
   <mat-label>Start Date</mat-label>
   <input matInput [matDatepicker]="start" [formControl]="startDate" />
   <mat-datepicker-toggle matSuffix [for]="start"></mat-datepicker-toggle>
   <mat-datepicker #start disabled="false"></mat-datepicker>
- </mat-form-field>
+</mat-form-field>
 
- <mat-form-field>
+<mat-form-field>
   <mat-label>End Date</mat-label>
   <input matInput [matDatepicker]="end" [formControl]="endDate" />
   <mat-datepicker-toggle matSuffix [for]="end"></mat-datepicker-toggle>
   <mat-datepicker #end disabled="false"></mat-datepicker>
- </mat-form-field>
-<br>
+</mat-form-field>
+<br><br>
 
-<br>
-  <textarea cols="50" rows="4">Enter Comments</textarea>
-<br>
-<br>
-  <button>Submit</button>
-  <hr>
+<button>Submit</button>
+
 </form>
 
+<style>
+  .footer {position: fixed; left:0;
+  bottom:0; width: 100%; text-align:left;}
+</style>
 
+<div class="footer">
+  <p>Insert Footer (Pilot Logo Maybe) Later</p>
+</div>
